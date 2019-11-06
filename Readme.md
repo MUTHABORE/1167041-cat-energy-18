@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Стороженко](https://up.htmlacademy.ru/adaptive/18/user/1167041).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 

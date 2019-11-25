@@ -6,40 +6,38 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="Logo" href="#">
-        <img class="logo-img--mobile" src="../source/img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat"></a>
+      <a class="logo" href="#">
+        <img class="logo__img logo__img--mobile" src="../source/img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat"></a>
       <button class="page-header__button-nav-burger" type="button" aria-label="Открыть или закрыть меню навигации по сайту"></button>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__item-link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">Подбор программы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="pet-nutrition">
-        <h1 class="pet-nutrition__title">Функциональное питание для котов</h1>
-        <p class="pet-nutrition__slogan">Занялся собой? Займись котом!</p>
-        <a class="pet-nutrition__item-link" href="#">
-          <img class="pet-nutrition__item-example" src="../source/img/index-can-mobile@1x.png" alt="Корм со вкусом курицы" width="280" height="270">
-        </a>
-        <a class="pet-nutrition__pick-program-button" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+      <section class="nutrition">
+        <h1 class="nutrition__title">Функциональное питание для котов</h1>
+        <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
+        <img class="nutrition__img" src="../source/img/index-can-mobile@1x.png" alt="Корм со вкусом курицы" width="280" height="270">
+        <a class="nutrition__link" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
       </section>
       <section class="programs">
-        <ul class="programs-list">
-          <li class="programs-list__item">
-            <div class="programs-wrapper">
-              <p class="programs-list__title">Похудение</p>
-              <p class="programs-list__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="catalog.html" class="programs-list__link">Каталог SLIM</a>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <div class="programs__wrapper">
+              <p class="programs__title">Похудение</p>
+              <p class="programs__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="catalog.html" class="programs__link">Каталог SLIM</a>
             </div>
           </li>
-          <li class="programs-list">
-            <div class="programs-wrapper">
-              <p class="programs-list__title">Набор массы</p>
-              <p class="programs-list__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="catalog.html" class="programs-list__link">Каталог PRO</a>
+          <li class="programs__item">
+            <div class="programs__wrapper">
+              <p class="programs__title">Набор массы</p>
+              <p class="programs__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a href="catalog.html" class="programs__link">Каталог PRO</a>
             </div>
           </li>
         </ul>
@@ -57,9 +55,9 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="nutrition-result">
+          <div class="example__result">
             <div class="expenses">
-              <ul class="expenses-list">
+              <ul class="expenses__list">
                 <li class="expenses__item">
                   <h3 class="expenses__info">5 кг</h3>
                   <p class="expenses__title">снижение<br>веса</p>
@@ -69,7 +67,7 @@
                   <p class="expenses__title">затрачено<br>времени</p>
                 </li>
               </ul>
-              <p class="expenses-total">Затраты на питание: 15 000 руб.</p>
+              <p class="expenses__total">Затраты на питание: 15 000 руб.</p>
             </div>
             <div class="program-result">
               <img class="program-result__cat-before" src="../source/img/before-mobile@1x.png" width="311" height="232" alt="Кот с лишним весом">
@@ -110,15 +108,15 @@
       </a>
       <div class="social">
         <ul class="social__list">
-          <li class="social__item social__item--vk"></li>
-          <li class="social__item social__item--inst"></li>
-          <li class="social__item social__item--fb"></li>
+          <li class="social__item social__item--vk"><a href="#" aria-label="Наша страница Вконтакте"></a></li>
+          <li class="social__item social__item--inst"><a href="#" aria-label="Наша страница в Инстраграм"></a></li>
+          <li class="social__item social__item--fb"><a href="#" aria-label="Наша страница в ФейсБук"></a></li>
         </ul>
       </div>
       <div class="made-in">
-        <a class="made-in__text">
+        <a class="made-in__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="made-in__title">HTML Academy</p>
-          <img src="../source/img/htmlacademy.svg" height="34" width="27" alt="Логотип HTML Academy">
+          <img class="made-in__img" src="../source/img/htmlacademy.svg" height="34" width="27" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

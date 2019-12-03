@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <a class="logo" href="index.html">
-        <img class="logo__img logo__img--mobile" src="../source/img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat"></a>
-      <button class="page-header__button-nav-toggle" type="button" aria-label="Открыть или закрыть меняю навигации по сайту"></button>
+      <div class="page-header__wrapper">
+        <a class="logo" href="index.html">
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat">
+        </a>
+        <button class="page-header__button-nav-burger" type="button" aria-label="Открыть или закрыть меняю навигации по сайту"></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -43,27 +49,27 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="programms-type">
-          <ul class="programms-type__list">
-            <li class="programms-type__item">
+        <fieldset class="programs-type">
+          <ul class="programs-type__list">
+            <li class="programs-type__item">
               <label>
-                <input class="visually-hidden" name="programms-type" type="radio" checked>
+                <input class="visually-hidden" name="programs-type" type="radio" checked>
                 <span class="programs-type__radio"></span>
-                <span class="programms-type__title">Похудение</span>
+                <span class="programs-type__title">Похудение</span>
               </label>
             </li>
-            <li class="programms-type__item">
+            <li class="programs-type__item">
               <label>
-                <input class="visually-hidden" name="programms-type" type="radio">
+                <input class="visually-hidden" name="programs-type" type="radio">
                 <span class="programs-type__radio"></span>
-                <span class="programms-type__title">Набор массы</span>
+                <span class="programs-type__title">Набор массы</span>
               </label>
             </li>
-            <li class="programms-type__item">
+            <li class="programs-type__item">
               <label>
-                <input class="visually-hidden" name="programms-type" type="radio">
+                <input class="visually-hidden" name="programs-type" type="radio">
                 <span class="programs-type__radio"></span>
-                <span class="programms-type__title">Не знаю (Нужен ваш совет)</span>
+                <span class="programs-type__title">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -132,22 +138,24 @@
           <h3 class="invation-dealers__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
           <p class="invation-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="invation-dealers__map" src="../source/img/bg-map-mobile--with-pin@1x.png" height="400" width="320" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="invation-dealers__map" src="img/bg-map-mobile--with-pin@1x.png" height="400" width="320" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
       <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo" src="../source/img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
       </a>
       <div class="social">
-        <ul class="social__list">
-          <li class="social__item social__item--vk"><a href="#" aria-label="Наша страница Вконтакте"></a></li>
-          <li class="social__item social__item--inst"><a href="#" aria-label="Наша страница в Инстраграм"></a></li>
-          <li class="social__item social__item--fb"><a href="#" aria-label="Наша страница в ФейсБук"></a></li>
-        </ul>
+        <div class="social__wrapper">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Наша страница Вконтакте"></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#" aria-label="Наша страница в Инстраграм"></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Наша страница в ФейсБук"></a></li>
+          </ul>
+        </div>
       </div>
       <div class="made-in">
         <a class="made-in__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="made-in__title">HTML Academy</p>
-          <img class="made-in__img" src="../source/img/htmlacademy.svg" height="34" width="27" alt="Логотип HTML Academy">
+          <img class="made-in__img" src="img/htmlacademy.svg" height="34" width="27" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

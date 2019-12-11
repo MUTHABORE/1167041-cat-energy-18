@@ -1,0 +1,48 @@
+.user-comment {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 14px;
+    width: 100%;
+    height: 3px;
+
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+.user-comment__title {
+  padding-left: 19px;
+  padding-right: 23px;
+  margin-bottom: 35px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111111;
+
+  background-color: #fff;
+}
+
+.user-comment__text-area {
+  display: block;
+  padding: 0;
+  padding-top: 12px;
+  padding-left: 14px;
+  margin: 0 auto;
+
+  width: 264px;
+  min-height: 136px;
+
+  letter-spacing: -0.1px;
+
+  border: 1px solid #e6e6e6;
+}

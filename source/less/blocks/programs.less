@@ -1,0 +1,128 @@
+.programs {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.programs__item {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programs__wrapper {
+  padding: 20px;
+}
+
+.programs__title {
+  position: relative;
+
+  margin: 10px 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  color: #111111;
+  text-transform: uppercase;
+
+  padding-left: 71px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    left: 2px;
+    top: -6px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -8px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url(../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--pro::after {
+    display: block;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+
+    width: 67px;
+    height: 28px;
+
+    content: "";
+
+    background-image: url(../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.programs__paragraph {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.programs__link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+
+  padding-right: 40px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+
+    position: absolute;
+    right: 3px;
+    top: 6px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url(../img/icon-right-arrow-long.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

@@ -12,7 +12,7 @@
     width: 100%;
     height: 3px;
 
-    background-color: #68b738;
+    background-color: @bg-color-spec;
 
     z-index: -1;
   }
@@ -29,7 +29,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  color: #111111;
+  color: @txt-color-main;
 
   background-color: #fff;
 }
@@ -39,10 +39,6 @@
   padding: 0;
   margin: 0 auto;
   margin-bottom: 57px;
-}
-
-.other-good {
-
 }
 
 .other-good__title {
@@ -56,11 +52,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: #222222;
+  color: @txt-color-base;
   text-transform: uppercase;
   letter-spacing: -0.2px;
 
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid @border-color-spec;
 }
 
 .other-good__info {
@@ -73,11 +69,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: #444444;
-}
-
-.other-good__name {
-
+  color: @txt-color-spec;
 }
 
 .other-good__value {
@@ -106,21 +98,20 @@
   border: none;
   border-right: 1px solid #fff;
 
-  background-color: #68b738;
+  background-color: @bg-color-spec;
 
   &--last {
     line-height: 38px;
     padding-bottom: 0px;
-  }
 
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
 
-  &--last::after {
-    content: "";
-    display: block;
-    position: relative;
+      bottom: -18px;
 
-    bottom: -18px;
-
-    border-bottom: 1px solid #e6e6e6;
+      border-bottom: 1px solid @border-color-spec;
+    }
   }
 }

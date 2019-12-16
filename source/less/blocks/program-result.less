@@ -6,10 +6,10 @@
 .program-result__cat {
   display: block;
   margin: 0 auto;
-}
 
-.program-result__cat--after {
-  display: none;
+  &--after {
+    display: none;
+  }
 }
 
 .program-result__slider {
@@ -30,7 +30,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #111111;
+  color: @txt-color-main;
   text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@
 
   background-color: #fff;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid @border-color-spec;
   border-radius: 5px;
 }
 
@@ -63,5 +63,5 @@
 }
 
 .program-result__slider-toggle input[type="radio"]:checked + .program-result__toggle-radio {
-  background-color: #68b738;
+  background-color: @bg-color-spec;
 }

@@ -52,6 +52,8 @@
 
 .program-result__toggle-radio {
   display: block;
+  position: relative;
+
   margin: 3px 0;
   margin-right: 2px;
 
@@ -60,6 +62,16 @@
 
   background-color: #fff;
   border-radius: 3px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 46px;
+    left: 0;
+    top: -20px;
+  }
 }
 
 .program-result__slider-toggle input[type="radio"]:checked + .program-result__toggle-radio {

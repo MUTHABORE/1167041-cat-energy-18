@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
-      <a class="logo" href="#">
-        <img class="logo__img logo__img--mobile" src="../source/img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat"></a>
-      <button class="page-header__button-nav-burger" type="button" aria-label="Открыть или закрыть меню навигации по сайту"></button>
+      <div class="page-header__wrapper">
+        <a class="logo" href="#">
+          <img class="logo__img logo__img--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo Cat">
+        </a>
+        <button class="page-header__button-nav-burger" type="button" aria-label="Открыть или закрыть меню навигации по сайту"></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
@@ -19,24 +25,26 @@
     </header>
     <main class="page-main">
       <section class="nutrition">
-        <h1 class="nutrition__title">Функциональное питание для котов</h1>
-        <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-        <img class="nutrition__img" src="../source/img/index-can-mobile@1x.png" alt="Корм со вкусом курицы" width="280" height="270">
-        <a class="nutrition__link" href="form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+        <div class="nutrition__wrapper">
+          <h1 class="nutrition__title">Функциональное питание для котов</h1>
+          <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
+          <img class="nutrition__img" src="img/index-can-mobile@1x.png" alt="Корм со вкусом курицы" width="280" height="271">
+        </div>
+        <a class="nutrition__link" href="form.html">Подобрать программу</a>
       </section>
       <section class="programs">
         <ul class="programs__list">
           <li class="programs__item">
             <div class="programs__wrapper">
-              <p class="programs__title">Похудение</p>
-              <p class="programs__about">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <p class="programs__title programs__title--slim">Похудение</p>
+              <p class="programs__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a href="catalog.html" class="programs__link">Каталог SLIM</a>
             </div>
           </li>
           <li class="programs__item">
             <div class="programs__wrapper">
-              <p class="programs__title">Набор массы</p>
-              <p class="programs__about">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <p class="programs__title programs__title--pro">Набор массы</p>
+              <p class="programs__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a href="catalog.html" class="programs__link">Каталог PRO</a>
             </div>
           </li>
@@ -54,43 +62,43 @@
       <section class="example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__result">
-            <div class="expenses">
-              <ul class="expenses__list">
-                <li class="expenses__item">
-                  <h3 class="expenses__info">5 кг</h3>
-                  <p class="expenses__title">снижение<br>веса</p>
-                </li>
-                <li class="expenses__item">
-                  <h3 class="expenses__info">60 дней</h3>
-                  <p class="expenses__title">затрачено<br>времени</p>
-                </li>
-              </ul>
-              <p class="expenses__total">Затраты на питание: 15 000 руб.</p>
-            </div>
-            <div class="program-result">
-              <img class="program-result__cat-before" src="../source/img/before-mobile@1x.png" width="311" height="232" alt="Кот с лишним весом">
-              <img class="program-result__cat-after" src="../source/img/after-mobile@1x.png" width="251" height="240" alt="Стройный кот после прохождения программы cat energy slim">
-              <div class="program-result__slider">
-                <p class="program-result__text program-result__text--one">Было</p>
-                <ul class="program-result__slider-toggle">
-                  <li class="program-result__one">
-                    <label>
-                      <input class="visually-hidden" type="radio" name="slider-result" checked>
-                      <span class="program-result__toggle-radio-one"></span>
-                    </label>
-                  </li>
-                  <li class="program-result__two">
-                    <label>
-                      <input class="visually-hidden" name="slider-result" type="radio">
-                      <span class="program-result__toggle-radio-two"></span>
-                    </label>
-                  </li>
-                </ul>
-                <p class="program-result__text program-result__text--two">Стало</p>
-              </div>
-            </div>
+          <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        </div>
+        <div class="example__result expenses">
+          <div class="expenses__wrapper">
+            <ul class="expenses__list">
+              <li class="expenses__item">
+                <h3 class="expenses__info">5 кг</h3>
+                <p class="expenses__title">снижение<br>веса</p>
+              </li>
+              <li class="expenses__item">
+                <h3 class="expenses__info">60 дней</h3>
+                <p class="expenses__title">затрачено<br>времени</p>
+              </li>
+            </ul>
+            <p class="expenses__total">Затраты на питание: 15 000 руб.</p>
+          </div>
+        </div>
+        <div class="program-result">
+          <img class="program-result__cat program-result__cat--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом">
+          <img class="program-result__cat program-result__cat--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот после прохождения программы cat energy slim">
+          <div class="program-result__slider">
+            <p class="program-result__text program-result__text--one">Было</p>
+            <ul class="program-result__slider-toggle">
+              <li class="program-result__one">
+                <label>
+                  <input class="visually-hidden" type="radio" name="slider-result" checked>
+                  <span class="program-result__toggle-radio program-result__toggle-radio--one"></span>
+                </label>
+              </li>
+              <li class="program-result__two">
+                <label>
+                  <input class="visually-hidden" name="slider-result" type="radio">
+                  <span class="program-result__toggle-radio program-result__toggle-radio--two"></span>
+                </label>
+              </li>
+            </ul>
+            <p class="program-result__text program-result__text--two">Стало</p>
           </div>
         </div>
       </section>
@@ -98,25 +106,27 @@
     <footer class="page-footer">
       <section class="invation-dealers invation-dealers--index">
         <div class="invation-dealers__wrapper">
-          <h3 class="invation-dealers__title">ПРИГЛАШАЕМ<br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</h3>
+          <h3 class="invation-dealers__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
           <p class="invation-dealers__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="invation-dealers__map" src="../source/img/bg-map-mobile--with-pin@1x.png" height="400" width="320" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <iframe class="invation-dealers__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adcb34e3eb1ab4cd0be42e24e6d5e895572b3651d8cc335165a546d6fceea413c&amp;source=constructor" width="320" height="363" frameborder="0"></iframe>
       </section>
       <a class="page-footer__logo-link" href="#">
-        <img class="page-footer__logo" src="../source/img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy logo">
       </a>
       <div class="social">
-        <ul class="social__list">
-          <li class="social__item social__item--vk"><a href="#" aria-label="Наша страница Вконтакте"></a></li>
-          <li class="social__item social__item--inst"><a href="#" aria-label="Наша страница в Инстраграм"></a></li>
-          <li class="social__item social__item--fb"><a href="#" aria-label="Наша страница в ФейсБук"></a></li>
-        </ul>
+        <div class="social__wrapper">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Наша страница Вконтакте"></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#" aria-label="Наша страница в Инстраграм"></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Наша страница в ФейсБук"></a></li>
+          </ul>
+        </div>
       </div>
       <div class="made-in">
         <a class="made-in__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="made-in__title">HTML Academy</p>
-          <img class="made-in__img" src="../source/img/htmlacademy.svg" height="34" width="27" alt="Логотип HTML Academy">
+          <svg class="made-in__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>

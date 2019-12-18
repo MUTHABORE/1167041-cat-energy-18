@@ -1,0 +1,79 @@
+.program-result {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.program-result__cat {
+  display: block;
+  margin: 0 auto;
+
+  &--after {
+    display: none;
+  }
+}
+
+.program-result__slider {
+  display: flex;
+  align-items: center;
+  width: 315px;
+  justify-content: center;
+
+  padding-left: 5px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.program-result__text {
+  padding: 0 18px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: @txt-color-main;
+  text-transform: uppercase;
+}
+
+.program-result__slider-toggle {
+  display: flex;
+
+  list-style: none;
+
+  height: 12px;
+  width: 72px;
+
+  padding: 0 5px;
+
+  background-color: #fff;
+
+  border: 1px solid @border-color-spec;
+  border-radius: 5px;
+}
+
+.program-result__toggle-radio {
+  display: block;
+  position: relative;
+
+  margin: 3px 0;
+  margin-right: 2px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: #fff;
+  border-radius: 3px;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 46px;
+    left: 0;
+    top: -20px;
+  }
+}
+
+.program-result__slider-toggle input[type="radio"]:checked + .program-result__toggle-radio {
+  background-color: @bg-color-spec;
+}

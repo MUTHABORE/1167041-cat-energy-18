@@ -23,3 +23,20 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: inline-block;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: @txt-color-base;
+  }
+}

@@ -13,7 +13,8 @@
 }
 
 .page-header__button-nav-burger {
-  display: inline-block;
+  // display: inline-block;
+  display: none;
   position: absolute;
 
   right: 20px;
@@ -29,3 +30,24 @@
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding: 0 30px;
+    margin-top: 24px;
+  }
+
+  .page-header__wrapper {
+    display: inline-block;
+
+    width: 173px;
+    height: 58px;
+
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+

@@ -1,3 +1,37 @@
 .logo {
   display: inline-block;
 }
+
+.logo__img {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo__img {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__img {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

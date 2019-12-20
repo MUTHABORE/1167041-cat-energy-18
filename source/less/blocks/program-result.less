@@ -72,8 +72,10 @@
     left: 0;
     top: -20px;
   }
+
+  .program-result__slider-toggle input[type="radio"]:checked + & {
+    background-color: @bg-color-spec;
+  }
 }
 
-.program-result__slider-toggle input[type="radio"]:checked + .program-result__toggle-radio {
-  background-color: @bg-color-spec;
-}
+

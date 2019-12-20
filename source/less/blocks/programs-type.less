@@ -29,34 +29,35 @@
   }
 }
 
+.programs-type__radio {
+  input[type="radio"] + & {
+    display: inline-block;
+    position: relative;
 
-input[type="radio"] + .programs-type__radio {
-  display: inline-block;
-  position: relative;
+    margin-right: 16px;
 
-  margin-right: 16px;
+    width: 28px;
+    height: 28px;
 
-  width: 28px;
-  height: 28px;
+    border-radius: 50%;
+    border: 1px solid @border-color-spec;
+  }
 
-  border-radius: 50%;
-  border: 1px solid @border-color-spec;
-}
+  input[type="radio"]:checked + &::after {
+    content: "";
+    display: block;
+    position: absolute;
 
-input[type="radio"]:checked + .programs-type__radio::after {
-  content: "";
-  display: block;
-  position: absolute;
+    top: 8px;
+    left: 8px;
 
-  top: 8px;
-  left: 8px;
+    width: 12px;
+    height: 12px;
 
-  width: 12px;
-  height: 12px;
-
-  background-color: @bg-color-spec;
-  background-position: center;
-  border-radius: 50%;
+    background-color: @bg-color-spec;
+    background-position: center;
+    border-radius: 50%;
+  }
 }
 
 .programs-type__title {

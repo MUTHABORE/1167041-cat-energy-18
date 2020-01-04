@@ -27,10 +27,31 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     display: inline-block;
+    margin-left: auto;
   }
 
   .main-nav__list {
     display: flex;
+  }
+
+  .main-nav__item {
+    display: block;
+    position: relative;
+    margin-left: 32px;
+
+    line-height: 63px;
+    letter-spacing: 0.1px;
+
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:last-child {
+      margin-left: 34px;
+      letter-spacing: -0.1px;
+    }
   }
 
   .main-nav__link {
@@ -38,5 +59,21 @@
     font-weight: 400;
     line-height: 20px;
     color: @txt-color-base;
+
+    .main-nav__item:first-child &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      bottom: 11px;
+
+      margin-right: 2px;
+      margin-left: 1px;
+
+      width: 95%;
+      height: 2px;
+
+      background-color: @bg-color-spec;
+    }
   }
 }

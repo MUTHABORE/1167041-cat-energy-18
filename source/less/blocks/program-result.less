@@ -77,3 +77,43 @@
 .program-result__slider-toggle input[type="radio"]:checked + .program-result__toggle-radio {
   background-color: @bg-color-spec;
 }
+
+@media (min-width: @tablet-width) {
+  .program-result {
+    height: 462px;
+    width: 100%;
+    padding: 0;
+    padding-top: 227px;
+    background-color: @bg-color-main;
+  }
+
+  .program-result__text {
+    margin: 0 20px;
+    margin-top: 2px;
+    padding: 0;
+    padding-bottom: 6px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-bottom: 1px dotted @border-color-dotted;
+  }
+
+  .program-result__slider {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .program-result__slider-toggle {
+    width: 428px;
+    height: 6px;
+
+    padding: 0;
+    margin-left: 3px;
+    margin-top: 14px;
+
+    border: none;
+    border-radius: 3px;
+    background-color: @bg-color-range;
+  }
+}

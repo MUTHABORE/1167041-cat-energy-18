@@ -23,11 +23,6 @@
   text-align: center;
 
   min-width: 124px;
-
-  &:nth-child(1) .expenses__title {
-    padding-right: 18px;
-    padding-left: 15px;
-  }
 }
 
 .expenses__info {
@@ -52,8 +47,10 @@
   position: relative;
   display: inline-block;
 
+  width: 87px;
+
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
   top: -9px;
 
   font-family: "Arial", sans-serif;
@@ -63,6 +60,11 @@
   color: @txt-color-spec;
 
   background-color: @bg-color-main;
+
+  .expenses__item:nth-child(1) & {
+    width: 82px;
+    padding-right: 2px;
+  }
 }
 
 .expenses__total {
@@ -75,4 +77,68 @@
   letter-spacing: -0.1px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .expenses {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .expenses__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+    margin: 0 30px 0 30px;
+  }
+
+  .expenses__list {
+    margin-top: 24px;
+  }
+
+  .expenses__item {
+    min-width: 162px;
+    margin-right: 42px;
+  }
+
+  .expenses__info {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: @txt-color-main;
+    letter-spacing: -0.1px;
+  }
+
+  .expenses__title {
+    min-width: 110px;
+    padding: 0 2px;
+
+    top: -13px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #fff;
+
+    .expenses__item:nth-child(2) & {
+      min-width: 127px;
+      padding: 0;
+    }
+  }
+
+  .expenses__total {
+    width: 180px;
+
+    margin: 0;
+    margin-top: 7px;
+    margin-right: 2px;
+
+    text-align: end;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.1px;
+  }
+
 }

@@ -30,3 +30,36 @@
   line-height: 18px;
   color: @txt-color-spec;
 }
+
+@media (min-width: @tablet-width) {
+  .example {
+    background: none;
+    padding: 0;
+    padding-top: 27px;
+    margin-top: 0;
+    border-top: 1px solid @border-color-rare;
+  }
+
+  .example__wrapper {
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .example__title {
+    font-size: 60px;
+    letter-spacing: -0.1px;
+  }
+
+  .example__paragraph {
+    margin-top: 64px;
+    margin-right: 70px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .example__paragraph-br {
+    display: none;
+  }
+}

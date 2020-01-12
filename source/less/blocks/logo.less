@@ -3,35 +3,20 @@
 }
 
 .logo__img {
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+  width: 191px;
+  height: 38px;
 }
 
 @media (min-width: @tablet-width) {
   .logo__img {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+    width: 173px;
+    height: 58px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .logo__img {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    width: 202px;
+    height: 59px;
   }
 }

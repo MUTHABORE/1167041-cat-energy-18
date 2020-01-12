@@ -40,3 +40,27 @@
   margin: 0 auto;
   margin-bottom: 39px;
 }
+
+@media (min-width: @tablet-width) {
+  .other-goods {
+    margin-bottom: 76px;
+    &::after {
+      top: 89px;
+    }
+  }
+
+  .other-goods__list {
+    margin-bottom: 69px;
+  }
+
+  .other-goods__title {
+    margin-left: 28px;
+    margin-top: 67px;
+    margin-bottom: 80px;
+    padding: 0 39px;
+
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+  }
+}

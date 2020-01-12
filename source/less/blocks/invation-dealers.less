@@ -1,6 +1,7 @@
 .invation-dealers {
   margin: 0 auto;
   padding-top: 28px;
+  background-color: @bg-color-main;
 
   &--index {
     background-color: #fff;
@@ -51,18 +52,43 @@
 }
 
 @media (min-width: @tablet-width) {
+  .invation-dealers {
+    padding-top: 64px;
+  }
+
   .invation-dealers__wrapper {
     display: flex;
     justify-content: space-between;
 
-    padding: 0 70px;
-    width: auto;
+    padding: 0 72px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    width: 624px;
   }
 
   .invation-dealers__title {
-    margin-left: 1px;
+    width: 225px;
+    margin-top: 1px;
+
     font-size: 20px;
     line-height: 25px;
     color: @txt-color-main;
   }
+
+  .invation-dealers__address {
+    width: 175px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+
+    &--SPB {
+      margin-top: 19px;
+    }
+  }
+
+  .invation-dealers__map {
+    height: 396px;
+  }
+
 }

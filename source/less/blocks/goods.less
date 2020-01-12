@@ -4,3 +4,14 @@
 
   border-bottom: 1px solid @border-color-base;
 }
+
+@media (min-width: @tablet-width) {
+  .goods__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0 30px;
+    border-bottom: none;
+  }
+}

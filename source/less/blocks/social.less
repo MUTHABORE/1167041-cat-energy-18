@@ -56,3 +56,47 @@
     background-image: url(../img/icon-fb.svg);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: auto;
+    margin-top: 2px;
+  }
+
+  .social__wrapper {
+    border: none;
+  }
+
+  .social__list {
+    margin: 0;
+    margin-left: 18px;
+  }
+
+  .social__item {
+    margin: 0 14px;
+  }
+
+  .social__link {
+    &--vk {
+      width: 30px;
+      height: 16px;
+
+      background-image: url(../img/icon-vk.svg);
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+
+      background-image: url(../img/icon-insta.svg);
+    }
+
+    &--fb {
+      width: 15px;
+      height: 28px;
+      margin-left: 1px;
+
+      background-image: url(../img/icon-fb.svg);
+    }
+  }
+}

@@ -46,3 +46,39 @@
 
   border: 1px solid @border-color-rare;
 }
+
+@media (min-width: @tablet-width) {
+  .user-comment{
+    margin-bottom: 65px;
+    &::after {
+      top: 22px;
+    }
+  }
+
+  .user-comment__title {
+    margin-left: 30px;
+    margin-bottom: 76px;
+    padding: 0 39px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+  }
+
+  .user-comment__wrapper {
+    margin-left: 70px;
+    margin-right: 68px;
+  }
+
+  .user-comment__text-area {
+    margin: 0 auto;
+    padding-top: 9px;
+    padding-left: 18px;
+
+    width: 611px;
+    min-height: 163px;
+
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.06px;
+  }
+}

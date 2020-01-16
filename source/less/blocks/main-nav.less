@@ -11,7 +11,7 @@
   border-bottom: 1px solid @border-color-rare;
 
   &:first-child {
-      border-top: 1px solid @border-color-rare;
+    border-top: 1px solid @border-color-rare;
   }
 }
 
@@ -74,6 +74,38 @@
       height: 2px;
 
       background-color: @bg-color-spec;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    margin-right: 39px;
+  }
+
+  .main-nav__item {
+    margin-left: 34px;
+
+    &:last-child {
+      margin-left: 32px;
+
+      & .main-nav__link {
+        letter-spacing: -0.15px;
+      }
+    }
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 63px;
+    letter-spacing: -0.1px;
+
+    &--index {
+      color: #ffffff;
+    }
+
+    .main-nav__item--on &--index::after {
+      background-color: #ffffff;
     }
   }
 }

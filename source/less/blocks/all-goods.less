@@ -29,7 +29,7 @@
     margin-bottom: 23px;
     padding-left: 2px;
 
-    background-image: url(../img/icon-plus-mobile.svg);
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
 
     opacity: 0.2;
@@ -91,19 +91,19 @@
     }
 
     &::after {
-    content: "";
-    display: block;
-    position: absolute;
+      content: "";
+      display: block;
+      position: absolute;
 
-    width: 60px;
-    height: 60px;
-    top: 54px;
-    left: calc(50% - 29px);
+      width: 60px;
+      height: 60px;
+      top: 54px;
+      left: calc(50% - 29px);
 
-    background-image: url(../img/icon-plus.svg);
-    background-repeat: no-repeat;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
 
-    opacity: 0.2;
+      opacity: 0.2;
     }
   }
 
@@ -116,5 +116,34 @@
 
   .all-goods__button {
     width: 247px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .all-goods {
+    width: 245px;
+    margin-right: 80px;
+    margin-top: 141px;
+  }
+
+  .all-goods__title {
+    position: relative;
+    padding-top: 84px;
+    margin: 0 40px;
+
+    &::after {
+      position: absolute;
+      top: 54px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  .all-goods__paragraph {
+    margin: 25px;
+  }
+
+  .all-goods__button {
+    width: 169px;
+    margin-top: 85px;
   }
 }

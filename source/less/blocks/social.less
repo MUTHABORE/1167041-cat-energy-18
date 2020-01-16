@@ -37,23 +37,25 @@
 
   &--vk {
     width: 22px;
-    height: 12px;
-
-    background-image: url(../img/icon-vk.svg);
+    height: 19px;
   }
 
   &--inst {
     width: 16px;
     height: 16px;
-
-    background-image: url(../img/icon-insta.svg);
   }
 
   &--fb {
     width: 10px;
     height: 19px;
+  }
+}
 
-    background-image: url(../img/icon-fb.svg);
+.social__link svg {
+  fill: @social-color-mobile;
+
+  & .st0 {
+    fill: @social-color-mobile;
   }
 }
 
@@ -80,23 +82,24 @@
     &--vk {
       width: 30px;
       height: 16px;
-
-      background-image: url(../img/icon-vk.svg);
     }
 
     &--inst {
       width: 23px;
-      height: 23px;
-
-      background-image: url(../img/icon-insta.svg);
+      height: 22px;
     }
 
     &--fb {
       width: 15px;
       height: 28px;
       margin-left: 1px;
-
-      background-image: url(../img/icon-fb.svg);
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    padding: 0;
+    padding-left: 2px;
   }
 }

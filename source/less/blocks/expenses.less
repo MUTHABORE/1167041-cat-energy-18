@@ -120,7 +120,7 @@
     font-size: 14px;
     line-height: 14px;
 
-    background-color: #fff;
+    background-color: #ffffff;
 
     .expenses__item:nth-child(2) & {
       min-width: 127px;
@@ -140,5 +140,30 @@
     line-height: 29px;
     letter-spacing: -0.1px;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .expenses__wrapper {
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 110px;
+  }
+
+  .expenses__list {
+    margin-top: 34px;
+  }
+
+  .expenses__title {
+    background-color: @bg-color-main;
+  }
+
+  .expenses__total {
+    width: auto;
+    margin-top: 28px;
+    margin-right: 10px;
+  }
+
+  .expenses__total-price {
+    margin-left: 60px;
+  }
 }

@@ -28,7 +28,7 @@
   line-height: 24px;
   color: @txt-color-main;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .additionally__list {
@@ -62,18 +62,18 @@ input[type="checkbox"] + .additionally__checkbox {
 }
 
 input[type="checkbox"]:checked + .additionally__checkbox::after {
-    position: absolute;
-    display: block;
-    content: "";
+  position: absolute;
+  display: block;
+  content: "";
 
-    top: 6px;
-    left: 3.5px;
+  top: 6px;
+  left: 3.5px;
 
-    width: 21px;
-    height: 17px;
+  width: 21px;
+  height: 17px;
 
-    background-image: url(../img/icon-tick.svg);
-    background-repeat: no-repeat;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 .additionally__item-title {
@@ -136,5 +136,40 @@ input[type="checkbox"]:checked + .additionally__checkbox::after {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: -0.08px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally {
+    margin-bottom: 29px;
+    width: 100%;
+  }
+
+  .additionally__title-wrapper {
+    width: 100%;
+  }
+
+  .additionally__title {
+    margin-left: 70px;
+  }
+
+  .additionally__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+    width: 1260px;
+  }
+
+  .additionally__item {
+    width: calc(25% - 30px);
+  }
+
+  .additionally__item-title {
+    line-height: 38px;
+    letter-spacing: 0.1px;
+
+    .additionally__item:first-child & {
+      letter-spacing: -0.08px;
+    }
   }
 }

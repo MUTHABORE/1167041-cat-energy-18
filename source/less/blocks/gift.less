@@ -1,8 +1,18 @@
-.gift{
+.gift {
   width: 280px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   margin-bottom: 35px;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: @bg-color-spec;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .gift__title {
@@ -15,13 +25,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
-  background-color: @bg-color-main;
-  background-position: center;
-  background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -33,7 +38,68 @@
     margin: 0 auto;
     margin-bottom: 62px;
 
-    background-image: url(../img/icon-gift.svg);
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 0;
+    height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      top: calc(50% - 35px);
+      left: calc(17% - 29px);
+    }
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .gift__title {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    margin-left: calc(59% + 5px);
+    top: 72px;
+
+    &::before {
+      position: absolute;
+      left: -332px;
+      top: -7px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 289px;
+    margin-right: 110px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .gift__title {
+    padding: 0;
+    padding-top: 115px;
+    margin: 0 auto;
+    text-align: center;
+
+    &::before {
+      top: -7px;
+      left: 96px;
+    }
   }
 }

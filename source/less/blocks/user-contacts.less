@@ -27,7 +27,7 @@
   line-height: 24px;
   color: @txt-color-main;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .user-contacts__list {
@@ -37,4 +37,48 @@
   padding-left: 19px;
   padding-right: 19px;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-contacts {
+    margin-bottom: 45px;
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  .user-contacts__title {
+    margin-left: 30px;
+    margin-bottom: 60px;
+    padding: 0 39px;
+    padding-right: 43px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.13px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .user-contacts__list {
+    width: calc(100% - 129px);
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contacts {
+    width: 100%;
+  }
+
+  .user-contacts__title {
+    margin-left: 70px;
+  }
+
+  .user-contacts__list {
+    display: flex;
+    margin-bottom: 2px;
+  }
 }

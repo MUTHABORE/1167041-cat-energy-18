@@ -31,7 +31,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 38px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -0.2px;
 
@@ -49,4 +49,73 @@
   line-height: 16px;
   color: @txt-color-spec;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    width: 50%;
+    margin: 55px 70px 66px 70px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.08px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 52px;
+  }
+
+  .form__submit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 71px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .form__submit {
+    margin: 0;
+    padding-right: 11px;
+    width: 283px;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 0;
+  }
+
+  .form__obligatory-fields {
+    margin: 16px 0 0 61px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__title {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 110px;
+  }
+
+  .form__fieldset {
+    margin-left: 110px;
+    margin-bottom: 49px;
+  }
+
+  .form__submit-wrapper {
+    margin-left: 40px;
+    margin-bottom: 81px;
+  }
+
+  .form__submit {
+    padding-right: 5px;
+    width: 568px;
+  }
+
+  .form__obligatory-fields {
+    margin-left: 82px;
+  }
 }

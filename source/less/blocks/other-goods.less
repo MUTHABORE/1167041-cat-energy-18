@@ -31,7 +31,7 @@
   line-height: 24px;
   color: @txt-color-main;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .other-goods__list {
@@ -39,4 +39,55 @@
   padding: 0;
   margin: 0 auto;
   margin-bottom: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .other-goods {
+    margin-bottom: 76px;
+
+    &::after {
+      top: 89px;
+    }
+  }
+
+  .other-goods__list {
+    margin-bottom: 69px;
+  }
+
+  .other-goods__title {
+    margin-left: 28px;
+    margin-top: 67px;
+    margin-bottom: 80px;
+    padding: 0 39px;
+
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-goods {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+
+    &::after {
+      top: 96px;
+    }
+  }
+
+  .other-goods__title-wrapper {
+    width: 100%;
+  }
+
+  .other-goods__title {
+    margin-top: 74px;
+    margin-left: 70px;
+  }
+
+  .other-goods__list {
+    margin: 0;
+    margin-left: 110px;
+  }
 }

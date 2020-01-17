@@ -13,10 +13,14 @@
   margin: 0 auto;
   margin-bottom: 135px;
 
-  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position-x: center;
   background-color: @bg-color-nutition-wrapper;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .nutrition__title {
@@ -27,14 +31,14 @@
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.1px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .nutrition__slogan {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -0.1px;
 
@@ -46,7 +50,11 @@
 .nutrition__img {
   position: absolute;
 
+  width: 280px;
+  height: 270px;
+
   left: calc(50% - 140px);
+  bottom: 236px;
 }
 
 .nutrition__link {
@@ -55,7 +63,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: -0.1px;
   padding-right: 3px;
@@ -68,4 +76,114 @@
   margin-top: 1px;
 
   background-color: @bg-color-spec;
+}
+
+@media (min-width: @tablet-width) {
+  .nutrition {
+    padding: 0 30px;
+    padding-bottom: 529px;
+    margin: 0 auto;
+  }
+
+  .nutrition__wrapper {
+    position: relative;
+
+    margin-left: 89px;
+    margin-bottom: 48px;
+
+    min-height: 50px;
+
+    text-align: left;
+    background: none;
+  }
+
+  .nutrition__title {
+    margin-top: 53px;
+    margin-left: -2px;
+    margin-right: 150px;
+    padding: 0;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: @txt-color-main;
+    letter-spacing: -0.2px;
+  }
+
+  .nutrition__slogan {
+    margin-top: 41px;
+    margin-bottom: 48px;
+    margin-left: -1px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: @txt-color-main;
+  }
+
+  .nutrition__img {
+    width: 709px;
+    height: 609px;
+    left: calc(50% - 354px);
+    top: 341px;
+    z-index: -1;
+  }
+
+  .nutrition__link {
+    margin-left: 89px;
+    padding-bottom: 2px;
+    width: 242px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nutrition {
+    padding-bottom: 268px;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+
+      height: 696px;
+      width: 720px;
+      right: 1px;
+      top: 0;
+
+      background-color: @bg-color-main;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      z-index: -1;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../index-background-desktop@1x.jpg");
+      }
+    }
+  }
+
+  .nutrition__wrapper {
+    width: 600px;
+    margin-left: 162px;
+    margin-top: 103px;
+  }
+
+  .nutrition__img {
+    width: 552px;
+    height: 499px;
+    left: calc(50% - 160px);
+    top: 142px;
+  }
+
+  .nutrition__slogan {
+    letter-spacing: -0.15px;
+  }
+
+  .nutrition__link {
+    margin-left: 160px;
+    margin-top: 53px;
+  }
 }

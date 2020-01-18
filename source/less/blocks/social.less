@@ -26,8 +26,11 @@
 
 .social__item {
   display: block;
-
   margin: 0 19.25px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link {
@@ -56,6 +59,11 @@
 
   & .st0 {
     fill: @social-color-mobile;
+  }
+
+  &:hover,
+  &:hover .st0 {
+    fill: @bg-color-spec;
   }
 }
 

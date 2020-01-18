@@ -46,6 +46,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
+  color: @txt-color-spec;
   text-transform: uppercase;
   letter-spacing: -0.2px;
 
@@ -53,6 +54,25 @@
 
   &::placeholder {
     color: @txt-color-spec;
+  }
+
+  &:hover {
+    border: 1px solid @border-color-spec-half;
+    outline: none;
+  }
+
+  &:focus {
+    padding-left: 13px;
+    line-height: 38px;
+    border: 2px solid @txt-color-spec;
+    outline: none;
+  }
+
+  &:error {
+    padding-left: 13px;
+    line-height: 38px;
+    border: 2px solid #ff8282;
+    outline: none;
   }
 }
 
@@ -84,6 +104,11 @@
     padding-left: 18px;
     font-size: 20px;
     line-height: 47px;
+
+    &:focus {
+      padding-left: 17px;
+      line-height: 45px;
+    }
   }
 }
 

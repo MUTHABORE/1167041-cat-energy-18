@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: 14px;
 
+  &--email:hover::after {
+    background-image: url("../img/icon-mail-hover.svg");
+  }
+
+    &--telephone:hover::after {
+    background-image: url("../img/icon-phone-hover.svg");
+  }
+
   &::after {
     content: "";
     display: block;
@@ -68,6 +76,29 @@
   text-transform: uppercase;
 
   border: 1px solid @border-color-spec;
+
+  &::placeholder {
+    color: @txt-color-spec;
+  }
+
+  &:hover {
+    border: 1px solid @border-color-spec-half;
+    outline: none;
+  }
+
+  &:focus {
+    padding-left: 13px;
+    line-height: 38px;
+    border: 2px solid @txt-color-spec;
+    outline: none;
+  }
+
+  &:error {
+    padding-left: 13px;
+    line-height: 38px;
+    border: 2px solid #ff8282;
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -109,6 +140,11 @@
     line-height: 48px;
 
     border: 1px solid @border-color-spec;
+
+    &:focus {
+      padding-left: 19px;
+      line-height: 46px;
+    }
   }
 }
 

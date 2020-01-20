@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
-    <header class="page-header">
+  <body class="page-body page-body--index">
+    <header class="page-header desktop-container">
       <div class="page-header__wrapper">
         <a class="logo" href="#">
           <picture>
@@ -28,96 +28,100 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="nutrition">
-        <div class="nutrition__wrapper">
-          <h1 class="nutrition__title">Функциональное питание для котов</h1>
-          <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-        </div>
-        <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-            <img class="nutrition__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм со вкусом курицы" width="280" height="271">
-        </picture>
-        <a class="nutrition__link" href="form.html">Подобрать программу</a>
-      </section>
-      <section class="programs">
-        <ul class="programs__list">
-          <li class="programs__item programs__item--slim">
-            <div class="programs__wrapper">
-              <p class="programs__title programs__title">Похудение</p>
-              <p class="programs__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="catalog.html" class="programs__link">Каталог SLIM</a>
-            </div>
-          </li>
-          <li class="programs__item programs__item--pro">
-            <div class="programs__wrapper">
-              <p class="programs__title programs__title">Набор массы</p>
-              <p class="programs__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="catalog.html" class="programs__link">Каталог PRO</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="work-process">
-        <h2 class="work-process__theme">Как это работает</h2>
-        <ul class="work-process__list">
-          <li class=" work-process__item">
-            <p class="work-process__title work-process__title--benefit">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="work-process__item">
-            <p class="work-process__title work-process__title--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="work-process__item">
-            <p class="work-process__title work-process__title--change">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="work-process__item">
-            <p class="work-process__title work-process__title--month">Уже через месяц наслаждайтесь <span class="work-process__short-bar">изменениями к лучшему</span> вашего питомца!</p>
-          </li>
-        </ul>
-      </section>
+      <div class="page-main__wrapper">
+        <section class="nutrition">
+          <div class="nutrition__wrapper">
+            <h1 class="nutrition__title">Функциональное питание для котов</h1>
+            <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="nutrition__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм со вкусом курицы" width="280" height="271">
+          </picture>
+          <a class="nutrition__link" href="form.html">Подобрать программу</a>
+        </section>
+        <section class="programs">
+          <ul class="programs__list">
+            <li class="programs__item programs__item--slim">
+              <div class="programs__wrapper">
+                <p class="programs__title programs__title">Похудение</p>
+                <p class="programs__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="catalog.html" class="programs__link">Каталог SLIM</a>
+              </div>
+            </li>
+            <li class="programs__item programs__item--pro">
+              <div class="programs__wrapper">
+                <p class="programs__title programs__title">Набор массы</p>
+                <p class="programs__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a href="catalog.html" class="programs__link">Каталог PRO</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="work-process">
+          <h2 class="work-process__theme">Как это работает</h2>
+          <ul class="work-process__list">
+            <li class=" work-process__item">
+              <p class="work-process__title work-process__title--benefit">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="work-process__item">
+              <p class="work-process__title work-process__title--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="work-process__item">
+              <p class="work-process__title work-process__title--change">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="work-process__item">
+              <p class="work-process__title work-process__title--month">Уже через месяц наслаждайтесь <span class="work-process__short-bar">изменениями к лучшему</span> вашего питомца!</p>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section class="example">
-        <div class="example__container">
-          <div class="example__wrapper">
+        <div class="example__wrapper">
+          <div class="example__container">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br class="example__paragraph-br"> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          </div>
-          <div class="example__result expenses">
-            <div class="expenses__wrapper">
-              <ul class="expenses__list">
-                <li class="expenses__item">
-                  <h3 class="expenses__info">5 кг</h3>
-                  <p class="expenses__title">снижение веса</p>
-                </li>
-                <li class="expenses__item">
-                  <h3 class="expenses__info">60 дней</h3>
-                  <p class="expenses__title">затрачено времени</p>
-                </li>
-              </ul>
-              <p class="expenses__total">Затраты на питание: <span class="expenses__total-price">15 000 руб.</span></p>
+            <div class="example__result expenses">
+              <div class="expenses__wrapper">
+                <ul class="expenses__list">
+                  <li class="expenses__item">
+                    <h3 class="expenses__info">5 кг</h3>
+                    <p class="expenses__title">снижение веса</p>
+                  </li>
+                  <li class="expenses__item">
+                    <h3 class="expenses__info">60 дней</h3>
+                    <p class="expenses__title">затрачено времени</p>
+                  </li>
+                </ul>
+                <p class="expenses__total">Затраты на питание: <span class="expenses__total-price">15 000 руб.</span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="program-result">
-          <div class="program-result__img-before">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="program-result__cat program-result__cat--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом">
-            </picture>
-          </div>
-          <div class="program-result__img-after">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="program-result__cat program-result__cat--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот после прохождения программы cat energy slim">
-            </picture>
-          </div>
-          <div class="program-result__changer">
-            <label class="program-result__text program-result__text--one" for="result--before">Было</label>
-            <div class="program-result__slider">
-              <button class="program-result__button" type="button" id="result--before"></button>
+          <div class="program-result">
+            <div class="program-result__wrapper">
+              <div class="program-result__img-before">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="program-result__cat program-result__cat--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом">
+                </picture>
+              </div>
+              <div class="program-result__img-after">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="program-result__cat program-result__cat--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот после прохождения программы cat energy slim">
+                </picture>
+              </div>
             </div>
-            <label class="program-result__text program-result__text--two">Стало</label>
+            <div class="program-result__changer">
+              <p class="program-result__text program-result__text--one">Было</p>
+              <div class="program-result__slider">
+                <button class="program-result__button" type="button"></button>
+              </div>
+              <p class="program-result__text program-result__text--two">Стало</p>
+            </div>
           </div>
         </div>
       </section>

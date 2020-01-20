@@ -39,8 +39,14 @@
   }
 
   .example__wrapper {
-    padding: 0 30px;
+    padding: 0;
     width: auto;
+  }
+
+  .example__container {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 708px;
   }
 
   .example__title {
@@ -64,35 +70,26 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    display: flex;
     position: relative;
     padding-top: 59px;
-    margin-bottom: 20px;
+    width: 100%;
     border: none;
-
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-
-      width: 100%;
-      height: 462px;
-      top: 210px;
-
-      background-color: @bg-color-main;
-      z-index: -2;
-    }
-  }
-
-  .example__container {
-    width: 595px;
   }
 
   .example__wrapper {
-    margin: 0 110px;
+    display: flex;
+    position: relative;
+    width: 1220px;
+
     margin-right: 0;
+    padding: 0 40px;
+  }
+
+  .example__container {
+    width: 569px;
     padding: 0;
   }
+
 
   .example__paragraph {
     margin: 146px 0 25px 0;

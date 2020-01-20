@@ -20,6 +20,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-main__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
   .page-main__title--catalog {
     margin-left: 10px;
     margin-top: 53px;
@@ -40,15 +45,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
   .page-main__title {
     &--catalog {
-      margin-left: 90px;
+      padding: 0;
+      margin: 0 auto;
       margin-top: 69px;
       margin-bottom: 23px;
+      width: 1219px;
     }
 
     &--form {
-      margin-left: 110px;
+      margin-left: calc(50% - 610px);
       margin-top: 69px;
     }
   }

@@ -203,12 +203,40 @@
 
 @media (min-width: @desktop-width) {
   .work-process {
-    width: auto;
-    margin: 0 110px;
+    width: 1220px;
+  }
+
+  .work-process__list {
   }
 
   .work-process__item {
+    display: inline-block;
     width: 245px;
+    margin-right: 76px;
+
+    &:before {
+      right: -3px;
+    }
+
+    &:nth-child(1)::before {
+      right: 15px;
+    }
+
+    &:nth-child(2)::before {
+      right: 0;
+    }
+
+    &:nth-child(3)::before {
+      right: -2px;
+    }
+
+    &:nth-child(4)::before {
+      right: -4px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &:nth-child(2n) {
       padding-bottom: 0;

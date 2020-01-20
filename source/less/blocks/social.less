@@ -27,10 +27,6 @@
 .social__item {
   display: block;
   margin: 0 19.25px;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link {
@@ -56,6 +52,10 @@
 
 .social__link svg {
   fill: @social-color-mobile;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   & .st0 {
     fill: @social-color-mobile;
@@ -108,6 +108,11 @@
 @media (min-width: @desktop-width) {
   .social {
     padding: 0;
-    padding-left: 2px;
+  }
+
+  .social__link {
+    &--fb {
+      width: 14px;
+    }
   }
 }

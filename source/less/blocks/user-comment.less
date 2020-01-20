@@ -41,12 +41,13 @@
   padding-left: 14px;
   margin: 0 auto;
 
-  width: 264px;
-  min-height: 136px;
+  width: 280px;
+  min-height: 150px;
 
   letter-spacing: -0.1px;
 
   border: 1px solid @border-color-rare;
+  resize: none;
 
   &:hover {
     border: 1px solid @border-color-spec-half;
@@ -89,8 +90,8 @@
     padding-top: 9px;
     padding-left: 18px;
 
-    width: 611px;
-    min-height: 163px;
+    width: 630px;
+    min-height: 174px;
 
     font-size: 20px;
     line-height: 30px;
@@ -114,15 +115,16 @@
   }
 
   .user-comment__title {
-    margin-left: 70px;
+    margin-left: calc(50% - 650px);
   }
 
   .user-comment__wrapper {
-    margin: 0 110px;
+    margin: 0 auto;
   }
 
   .user-comment__text-area {
-    width: 1200px;
+    min-height: 174px;
+    width: 1220px;
     border: 1px solid @border-color-spec;
   }
 }

@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -33,7 +36,7 @@
         <ul class="goods__list">
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
@@ -41,7 +44,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy pro 500 Г</h3>
+                <a class="good__title">Cat energy pro 500 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -62,7 +65,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
@@ -70,7 +73,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy pro 1000 Г</h3>
+                <a class="good__title">Cat energy pro 1000 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -91,7 +94,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
@@ -99,7 +102,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy pro 500 Г</h3>
+                <a class="good__title">Cat energy pro 500 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -120,7 +123,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
@@ -128,7 +131,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy pro 1000 Г</h3>
+                <a class="good__title">Cat energy pro 1000 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -149,7 +152,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
@@ -157,7 +160,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy slim 500 Г</h3>
+                <a class="good__title">Cat energy slim 500 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -178,7 +181,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
@@ -186,7 +189,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy slim 1000 Г</h3>
+                <a class="good__title">Cat energy slim 1000 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -207,7 +210,7 @@
           </li>
           <li class="goods__item good">
             <div class="good__wrapper">
-              <a href="#">
+              <a class="good__link" href="#">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
@@ -215,7 +218,7 @@
                 </picture>
               </a>
               <div class="good__info">
-                <h3 class="good__title">Cat energy slim 500 Г</h3>
+                <a class="good__title">Cat energy slim 500 Г</a>
                 <table class="good__table">
                   <tr>
                     <td class="good__name">Объем</td>
@@ -235,7 +238,7 @@
             <button class="good__order">Заказать</button>
           </li>
           <li class="good all-goods">
-            <h3 class="all-goods__title">Показать еще 100500 товаров</h3>
+            <a class="all-goods__title">Показать еще 100500 товаров</a>
             <p class="all-goods__paragraph">На самом деле вкусов гораздо больше!</p>
             <a class="all-goods__button">Показать все</a>
           </li>
@@ -248,7 +251,7 @@
         <div class="other-goods__wrapper">
           <ul class="other-goods__list">
             <li class="other-goods__item other-good">
-            <h3 class="other-good__title">Сахарозаменитель</h3>
+            <a class="other-good__title">Сахарозаменитель</a>
               <table class="other-good__info">
                 <tr>
                   <td class="other-good__name">1 упаковка (100 г)</td>
@@ -258,7 +261,7 @@
               <button class="other-good__order">Заказать</button>
             </li>
             <li class="other-goods__item other-good">
-              <h3 class="other-good__title">Питьевая вода</h3>
+              <a class="other-good__title">Питьевая вода</a>
               <table class="other-good__info">
                 <tr>
                   <td class="other-good__name">5 литров</td>
@@ -268,7 +271,7 @@
               <button class="other-good__order">Заказать</button>
             </li>
             <li class="other-goods__item other-good">
-              <h3 class="other-good__title">Молоко</h3>
+              <a class="other-good__title">Молоко</a>
               <table class="other-good__info">
                 <tr>
                   <td class="other-good__name">1 литр</td>
@@ -278,7 +281,7 @@
               <button class="other-good__order">Заказать</button>
             </li>
             <li class="other-goods__item other-good other-good--last">
-              <h3 class="other-good__title">Витамины</h3>
+              <a class="other-good__title">Витамины</a>
               <table class="other-good__info">
                 <tr>
                   <td class="other-good__name">1 упаковка (30 г)</td>
@@ -289,7 +292,7 @@
             </li>
           </ul>
           <section class="gift">
-            <h3 class="gift__title">Закажите все<br>и получите чехол для кота в подарок!</h3>
+            <a class="gift__title">Закажите все<br>и получите чехол для кота в подарок!</a>
           </section>
         </div>
       </section>
@@ -297,7 +300,7 @@
     <footer class="page-footer">
       <section class="invation-dealers">
         <div class="invation-dealers__wrapper">
-          <h3 class="invation-dealers__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
+          <a class="invation-dealers__title">Приглашаем<br>к сотрудничеству дилеров!</a>
           <div class="invation-dealers__address-wrapper">
             <p class="invation-dealers__address">ул. Большая Конюшенная, д. 19/8</p>
             <p class="invation-dealers__address invation-dealers__address--SPB">Санкт-Петербург</p>

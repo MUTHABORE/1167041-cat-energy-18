@@ -18,7 +18,6 @@
   font-weight: 400;
   line-height: 60px;
   color: @txt-color-main;
-  letter-spacing: 0.2px;
 }
 
 .example__paragraph {
@@ -51,7 +50,6 @@
 
   .example__title {
     font-size: 60px;
-    letter-spacing: -0.1px;
   }
 
   .example__paragraph {
@@ -74,6 +72,18 @@
     padding-top: 59px;
     width: 100%;
     border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 462px;
+      bottom: 0;
+      left: 0;
+
+      background-image: linear-gradient(to right, @bg-color-main calc(50% + 325px), @bg-color-after calc(50% + 325px));
+      z-index: -1;
+    }
   }
 
   .example__wrapper {
@@ -86,7 +96,7 @@
   }
 
   .example__container {
-    width: 569px;
+    width: 450px;
     padding: 0;
   }
 

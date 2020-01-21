@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -31,53 +34,55 @@
       <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="form__title">Заполните анкету и мы подберем<br>программу питания для вашего кота</h2>
-        <fieldset class="form__fieldset">
-          <ul class="pet-info">
-            <li class="pet-info__item">
-              <label class="pet-info__label">
-                <span class="pet-info__title">Имя:*</span>
-                <input class="pet-info__input" type="text" name="name" placeholder="БАРСИК" required>
-              </label>
-            </li>
-            <li class="pet-info__item">
-              <label class="pet-info__label">
-                <span class="pet-info__title pet-info__title--weight">Вес (кг):*</span>
-                <input class="pet-info__input" type="text" name="weight" placeholder="7" required>
-              </label>
-            </li>
-            <li class="pet-info__item">
-              <label class="pet-info__label">
-                <span class="pet-info__title pet-info__title--age">Возраст (лет):</span>
-                <input class="pet-info__input" type="text" name="years-old" placeholder="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="programs-type">
-          <ul class="programs-type__list">
-            <li class="programs-type__item">
-              <label class="programs-type__label">
-                <input class="visually-hidden" name="programs-type" type="radio" checked>
-                <span class="programs-type__radio"></span>
-                <span class="programs-type__title">Похудение</span>
-              </label>
-            </li>
-            <li class="programs-type__item">
-              <label class="programs-type__label">
-                <input class="visually-hidden" name="programs-type" type="radio">
-                <span class="programs-type__radio"></span>
-                <span class="programs-type__title">Набор массы</span>
-              </label>
-            </li>
-            <li class="programs-type__item">
-              <label class="programs-type__label">
-                <input class="visually-hidden" name="programs-type" type="radio">
-                <span class="programs-type__radio"></span>
-                <span class="programs-type__title">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="form__fieldset">
+            <ul class="pet-info">
+              <li class="pet-info__item">
+                <label class="pet-info__label">
+                  <span class="pet-info__title">Имя:*</span>
+                  <input class="pet-info__input" type="text" name="name" placeholder="БАРСИК" required>
+                </label>
+              </li>
+              <li class="pet-info__item">
+                <label class="pet-info__label">
+                  <span class="pet-info__title pet-info__title--weight">Вес (кг):*</span>
+                  <input class="pet-info__input" type="text" name="weight" placeholder="7" required>
+                </label>
+              </li>
+              <li class="pet-info__item">
+                <label class="pet-info__label">
+                  <span class="pet-info__title pet-info__title--age">Возраст (лет):</span>
+                  <input class="pet-info__input" type="text" name="years-old" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="programs-type">
+            <ul class="programs-type__list">
+              <li class="programs-type__item">
+                <label class="programs-type__label">
+                  <input class="visually-hidden" name="programs-type" type="radio" checked>
+                  <span class="programs-type__radio"></span>
+                  <span class="programs-type__title">Похудение</span>
+                </label>
+              </li>
+              <li class="programs-type__item">
+                <label class="programs-type__label">
+                  <input class="visually-hidden" name="programs-type" type="radio">
+                  <span class="programs-type__radio"></span>
+                  <span class="programs-type__title">Набор массы</span>
+                </label>
+              </li>
+              <li class="programs-type__item">
+                <label class="programs-type__label">
+                  <input class="visually-hidden" name="programs-type" type="radio">
+                  <span class="programs-type__radio"></span>
+                  <span class="programs-type__title">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="user-contacts">
           <legend class="user-contacts__title">Контактные данные <br>(владельца кота)</legend>
           <ul class="user-contacts__list">

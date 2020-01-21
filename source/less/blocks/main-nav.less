@@ -60,7 +60,6 @@
     margin-left: 32px;
 
     line-height: 63px;
-    letter-spacing: 0.1px;
 
     border: none;
 
@@ -70,7 +69,6 @@
 
     &:last-child {
       margin-left: 34px;
-      letter-spacing: -0.1px;
     }
   }
 
@@ -88,25 +86,20 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    margin-right: -2px;
+    margin-right: -1px;
   }
 
   .main-nav__item {
-    margin-left: 34px;
+    margin-left: 35px;
 
     &:last-child {
-      margin-left: 32px;
-
-      & .main-nav__link {
-        letter-spacing: -0.15px;
-      }
+      margin-left: 30px;
     }
   }
 
   .main-nav__link {
     font-size: 20px;
     line-height: 63px;
-    letter-spacing: -0.1px;
 
     .main-nav__item--on &::after {
       bottom: -8px;

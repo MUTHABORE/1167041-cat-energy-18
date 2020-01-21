@@ -44,7 +44,9 @@
   width: 280px;
   min-height: 150px;
 
-  letter-spacing: -0.1px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
 
   border: 1px solid @border-color-rare;
   resize: none;
@@ -74,15 +76,14 @@
   .user-comment__title {
     margin-left: 30px;
     margin-bottom: 76px;
-    padding: 0 39px;
+    padding: 0 40px 0 39px;
     font-size: 36px;
     line-height: 36px;
-    letter-spacing: 0.1px;
   }
 
   .user-comment__wrapper {
-    margin-left: 70px;
-    margin-right: 68px;
+    margin: 0 auto;
+    padding-left: 3px;
   }
 
   .user-comment__text-area {
@@ -90,12 +91,11 @@
     padding-top: 9px;
     padding-left: 18px;
 
-    width: 630px;
+    width: 631px;
     min-height: 174px;
 
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: -0.06px;
 
     &:focus {
       padding-top: 8px;
@@ -119,12 +119,16 @@
   }
 
   .user-comment__wrapper {
+    width: 1220px;
+    padding: 0 40px;
     margin: 0 auto;
   }
 
   .user-comment__text-area {
     min-height: 174px;
     width: 1220px;
-    border: 1px solid @border-color-spec;
+
+    margin: 0;
+    border: 1px solid @border-color-spec-half;
   }
 }

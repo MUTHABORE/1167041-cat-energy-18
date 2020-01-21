@@ -16,6 +16,10 @@
   width: 280px;
 }
 
+.good__link {
+  height: 144px;
+}
+
 .good__info {
   min-width: 145px;
 }
@@ -34,18 +38,18 @@
 }
 
 .good__title {
+  display: block;
   margin-top: 21px;
   margin-bottom: 12px;
   padding: 0;
 
-  width: 100px;
+  width: 95px;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: @txt-color-main;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
 }
 
 .good__name {
@@ -63,9 +67,9 @@
   width: 280px;
 
   margin: 0 auto;
-  margin-top: -2px;
   padding-right: 3px;
 
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 38px;
@@ -86,11 +90,10 @@
 
 @media (min-width: @tablet-width) {
   .good {
-    display: inline-block;
     background-color: @bg-color-main;
     border: none;
     margin-top: 140px;
-    margin-right: 56px;
+    margin-right: 60px;
     padding-bottom: 40px;
 
     &:nth-child(2n) {
@@ -160,14 +163,16 @@
     margin-top: 0;
 
     line-height: 40px;
-    letter-spacing: -0.2px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .good {
-    display: inline-block;
-    margin: 142px 76px 1px 0;
+    margin: 142px 80px 1px 0;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;

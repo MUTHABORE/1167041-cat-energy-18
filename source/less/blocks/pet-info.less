@@ -22,11 +22,9 @@
   line-height: 40px;
   color: @txt-color-base;
   text-transform: uppercase;
-  letter-spacing: -0.2px;
   white-space: nowrap;
 
   &--weight {
-    letter-spacing: 0;
     margin-right: 18px;
   }
 
@@ -43,14 +41,14 @@
   padding-bottom: 2px;
   margin-right: 1px;
 
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
   color: @txt-color-spec;
   text-transform: uppercase;
-  letter-spacing: -0.2px;
 
-  border: 1px solid @border-color-spec;
+  border: 1px solid @border-color-spec-half;
 
   &::placeholder {
     color: @txt-color-spec;
@@ -93,7 +91,6 @@
     margin-right: 16px;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0;
 
     .pet-info__item:nth-child(2) & {
       margin-right: 20px;
@@ -120,6 +117,14 @@
 
   .pet-info__item {
     margin-left: 1px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .pet-info__title--age {
+    margin-right: 17px;
   }
 
   .pet-info__input {

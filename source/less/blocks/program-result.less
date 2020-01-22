@@ -1,21 +1,18 @@
-.program-result {
+.program-result__wrapper {
   width: 320px;
-  margin: 0 auto;
+  display: flex;
+  margin-left: -20px;
+  overflow: hidden;
 }
 
 .program-result__cat {
   display: block;
-  margin: 0 auto;
-}
-
-.program-result__img--after {
-  display: none;
 }
 
 .program-result__changer {
   display: flex;
   align-items: center;
-  width: 315px;
+  width: 275px;
   justify-content: center;
 
   padding-left: 5px;
@@ -25,6 +22,7 @@
 
 .program-result__text {
   padding: 0 18px;
+  margin: 0;
 
   font-size: 16px;
   font-weight: 400;
@@ -62,6 +60,7 @@
   background-color: @bg-color-spec;
   border: none;
   border-radius: 3px;
+  outline: none;
 
   &::after {
     display: block;
@@ -77,29 +76,50 @@
 @media (min-width: @tablet-width) {
   .program-result {
     position: relative;
-    height: 655px;
     width: 100%;
-    padding: 0;
+    padding: 24px 0 63px 0;
 
-    &::before {
-      display: block;
+    &::after {
       position: absolute;
       content: "";
-
       width: 100%;
       height: 462px;
-      top: 193px;
-
-      background-image: linear-gradient(to right, @bg-color-main 50%, @bg-color-after 50%);
-      z-index: -1;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      z-index: -2;
     }
   }
 
-  .program-result__cat {
-    position: absolute;
-    margin-top: 24px;
-    margin-left: calc(50% - 338px);
+  .program-result__wrapper {
+    position: relative;
+    width: 690px;
+    min-height: 517px;
+    margin: 0 auto 17px auto;
+  }
 
+  .program-result__img-before {
+    position: absolute;
+    width: 49%;
+    height: 517px;
+    top: 0;
+    left: 0;
+    margin-left: 7px;
+    overflow: hidden;
+  }
+
+  .program-result__img-after {
+    position: absolute;
+    width: 51%;
+    height: 517px;
+    top: 0;
+    right: 0;
+    margin-right: -7px;
+    overflow: hidden;
+    direction: rtl;
+  }
+
+  .program-result__cat {
     &--before {
       width: 690px;
       height: 517px;
@@ -122,13 +142,21 @@
     line-height: 20px;
 
     border-bottom: 1px dotted @border-color-dotted;
+
+    &:hover {
+      border-bottom: 1px solid @border-color-solid;
+    }
+
+    &:active {
+      padding-bottom: 7px;
+      border: none;
+    }
   }
 
   .program-result__changer {
-    width: auto;
+    width: 708px;
     margin: 0 auto;
-    padding-top: 558px;
-    padding-left: 0;
+    padding: 0 13px 5px 13px;
   }
 
   .program-result__slider {
@@ -157,48 +185,75 @@
 
     border: 12px solid #ffffff;
     border-radius: 50%;
+    box-shadow: 0 0 0 1px @border-color-spec, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
-    &::before {
-      display: block;
-      content: "";
-      position: absolute;
-
-      width: 34px;
-      height: 34px;
-
-      top: -13px;
-      left: -13px;
-
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-
-      background-color: @border-color-spec;
-      border-radius: 50%;
-      z-index: -1;
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 1px @border-color-spec, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
-    &::after {
-      width: 44px;
-      height: 44px;
-
-      left: -18px;
-      top: -18px;
+    &:active {
+      top: -12px;
+      left: calc(50% - 15px);
+      width: 30px;
+      height: 30px;
+      border: 11px solid #ffffff;
+      box-shadow: 0 0 0 2px @bg-color-spec, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .program-result {
+    margin: 0;
     margin-top: -63px;
+    padding-left: 113px;
+    width: 610px;
+    flex-grow: 1;
 
-    &::before {
-      width: 790px;
-      top: 214px;
-      left: 55px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .program-result__wrapper {
+    margin-bottom: 38px;
+  }
+
+  .program-result__img-before {
+    width: 52.9%;
+  }
+
+  .program-result__img-after {
+    width: 47.1%;
+  }
+
+  .program-result__cat {
+    &--before {
+      margin-left: 0;
+      left: 1px;
     }
   }
 
   .program-result__changer {
-    padding-top: 579px;
-    padding-left: 55px;
+    width: 600px;
+    margin-left: 58px;
+  }
+
+  .program-result__text {
+    margin: 0;
+    margin-top: 2px;
+
+    &--one {
+      margin-right: 21px;
+    }
+
+    &--two {
+      margin-left: 20px;
+    }
+  }
+
+  .program-result__button {
+    left: calc(50% - 15px);
   }
 }

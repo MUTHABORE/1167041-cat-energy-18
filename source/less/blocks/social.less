@@ -26,7 +26,6 @@
 
 .social__item {
   display: block;
-
   margin: 0 19.25px;
 }
 
@@ -38,11 +37,13 @@
   &--vk {
     width: 22px;
     height: 19px;
+    margin-top: -6px;
   }
 
   &--inst {
     width: 16px;
     height: 16px;
+    margin-top: -6px;
   }
 
   &--fb {
@@ -54,8 +55,17 @@
 .social__link svg {
   fill: @social-color-mobile;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   & .st0 {
     fill: @social-color-mobile;
+  }
+
+  &:hover,
+  &:hover .st0 {
+    fill: @bg-color-spec;
   }
 }
 
@@ -87,6 +97,7 @@
     &--inst {
       width: 23px;
       height: 22px;
+      margin-top: 0;
     }
 
     &--fb {
@@ -100,6 +111,19 @@
 @media (min-width: @desktop-width) {
   .social {
     padding: 0;
-    padding-left: 2px;
+  }
+
+  .social__link {
+    &--vk {
+      margin-top: -8px;
+    }
+
+    &--inst {
+      margin-top: -2px;
+    }
+
+    &--fb {
+      width: 14px;
+    }
   }
 }

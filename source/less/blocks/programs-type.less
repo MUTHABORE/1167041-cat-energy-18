@@ -16,6 +16,12 @@
   list-style: none;
 }
 
+.programs-type__item {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .programs-type__label {
   display: flex;
   margin-bottom: 11px;
@@ -24,7 +30,6 @@
     margin-bottom: 10px;
   }
 }
-
 
 input[type="radio"] + .programs-type__radio {
   display: inline-block;
@@ -37,6 +42,10 @@ input[type="radio"] + .programs-type__radio {
 
   border-radius: 50%;
   border: 1px solid @border-color-spec;
+
+  .programs-type__item:hover & {
+    border: 1px solid @border-color-spec-hvr-actv;
+  }
 }
 
 input[type="radio"]:checked + .programs-type__radio::after {
@@ -64,7 +73,6 @@ input[type="radio"]:checked + .programs-type__radio::after {
   line-height: 31px;
   text-transform: uppercase;
   color: @txt-color-base;
-  letter-spacing: -0.2px;
 }
 
 @media (min-width: @tablet-width) {
@@ -106,14 +114,12 @@ input[type="radio"]:checked + .programs-type__radio::after {
     padding-bottom: 0;
     font-size: 20px;
     line-height: 40px;
-    letter-spacing: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs-type {
-    margin-left: 77px;
-    margin-bottom: 69px;
     width: 568px;
+    margin: 0;
   }
 }

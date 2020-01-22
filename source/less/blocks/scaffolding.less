@@ -1,0 +1,53 @@
+.page-body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .page-body {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-body {
+    &--index::before {
+      display: block;
+      content: "";
+      position: absolute;
+
+      height: 696px;
+      width: 50%;
+      right: 0;
+      top: 0;
+
+      background-color: @bg-color-spec-cat;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position-x: calc(100% + 69px);
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../index-background-desktop@2x.jpg");
+      }
+    }
+  }
+
+  .desktop-container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}

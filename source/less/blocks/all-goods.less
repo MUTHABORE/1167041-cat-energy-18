@@ -1,11 +1,13 @@
 .all-goods {
+  padding-bottom: 24px;
+
+  background-color: #ffffff;
   border: 1px solid @border-color-main;
   border-bottom: none;
-
-  padding-bottom: 24px;
 }
 
 .all-goods__title {
+  display: block;
   margin: 0;
   padding-left: 1px;
 
@@ -15,7 +17,6 @@
   color: @txt-color-main;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: -0.2px;
 
   &::before {
     content: "";
@@ -55,7 +56,6 @@
   line-height: 40px;
   color: @txt-color-spec;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
   text-decoration: none;
   text-align: center;
 
@@ -66,13 +66,21 @@
   padding-left: 2px;
 
   background-color: @bg-color-main;
+
+  &:hover {
+    background-color: @border-color-main;
+  }
+
+  &:active {
+    color: @txt-color-spec-opacity;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .all-goods {
     box-sizing: border-box;
     margin-top: 140px;
-    padding-bottom: 38px;
+    padding-bottom: 39px;
     width: 324px;
     border-bottom: 1px solid @border-color-main;
   }
@@ -84,7 +92,6 @@
 
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: -0.1px;
 
     &::before {
       width: 0;

@@ -18,7 +18,6 @@
   font-weight: 400;
   line-height: 60px;
   color: @txt-color-main;
-  letter-spacing: 0.2px;
 }
 
 .example__paragraph {
@@ -39,13 +38,18 @@
   }
 
   .example__wrapper {
+    padding: 0;
+    width: auto;
+  }
+
+  .example__container {
+    margin: 0 auto;
     padding: 0 30px;
     width: 708px;
   }
 
   .example__title {
     font-size: 60px;
-    letter-spacing: -0.1px;
   }
 
   .example__paragraph {
@@ -64,35 +68,37 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    display: flex;
     position: relative;
     padding-top: 59px;
-    margin-bottom: 20px;
+    width: 100%;
     border: none;
 
-    &::before {
-      display: block;
-      position: absolute;
+    &::after {
       content: "";
-
+      position: absolute;
       width: 100%;
       height: 462px;
-      top: 210px;
+      bottom: 0;
+      left: 0;
 
-      background-color: @bg-color-main;
-      z-index: -2;
+      background-image: linear-gradient(to right, @bg-color-main calc(50% + 325px), @bg-color-after calc(50% + 325px));
+      z-index: -1;
     }
   }
 
-  .example__container {
-    width: 595px;
+  .example__wrapper {
+    display: flex;
+    position: relative;
+    width: 1220px;
+
+    padding: 0 40px;
   }
 
-  .example__wrapper {
-    margin: 0 110px;
-    margin-right: 0;
+  .example__container {
+    width: 450px;
     padding: 0;
   }
+
 
   .example__paragraph {
     margin: 146px 0 25px 0;

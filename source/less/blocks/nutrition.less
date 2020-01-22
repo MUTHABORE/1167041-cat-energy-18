@@ -1,5 +1,6 @@
 .nutrition {
   margin-bottom: 22px;
+  position: relative;
 }
 
 .nutrition__wrapper {
@@ -30,7 +31,6 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0.1px;
   color: #ffffff;
 }
 
@@ -40,7 +40,6 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
 
   margin-top: 25px;
   margin-bottom: 28px;
@@ -51,10 +50,10 @@
   position: absolute;
 
   width: 280px;
-  height: 270px;
+  height: 271px;
 
   left: calc(50% - 140px);
-  bottom: 236px;
+  bottom: 43px;
 }
 
 .nutrition__link {
@@ -65,7 +64,6 @@
   line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
   padding-right: 3px;
   text-decoration: none;
   text-align: center;
@@ -76,11 +74,19 @@
   margin-top: 1px;
 
   background-color: @bg-color-spec;
+
+  &:hover {
+    background-color: @bg-color-btn-hvr-actv;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .nutrition {
-    padding: 0 30px;
+    padding: 0;
     padding-bottom: 529px;
     margin: 0 auto;
   }
@@ -107,7 +113,6 @@
     font-weight: 400;
     line-height: 60px;
     color: @txt-color-main;
-    letter-spacing: -0.2px;
   }
 
   .nutrition__slogan {
@@ -124,8 +129,8 @@
   .nutrition__img {
     width: 709px;
     height: 609px;
-    left: calc(50% - 354px);
-    top: 341px;
+    left: calc(50% - 355px);
+    bottom: 0;
     z-index: -1;
   }
 
@@ -143,31 +148,14 @@
 
 @media (min-width: @desktop-width) {
   .nutrition {
+    padding-left: 80px;
     padding-bottom: 268px;
-
-    &::before {
-      display: block;
-      content: "";
-      position: absolute;
-
-      height: 696px;
-      width: 720px;
-      right: 1px;
-      top: 0;
-
-      background-color: @bg-color-main;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      z-index: -1;
-
-      @media (min-resolution: @retina-dppx) {
-        background-image: url("../index-background-desktop@1x.jpg");
-      }
-    }
+    width: 1140px;
   }
 
   .nutrition__wrapper {
     width: 600px;
-    margin-left: 162px;
+    margin-left: 2px;
     margin-top: 103px;
   }
 
@@ -175,15 +163,11 @@
     width: 552px;
     height: 499px;
     left: calc(50% - 160px);
-    top: 142px;
-  }
-
-  .nutrition__slogan {
-    letter-spacing: -0.15px;
+    top: -80px;
   }
 
   .nutrition__link {
-    margin-left: 160px;
+    margin-left: 0;
     margin-top: 53px;
   }
 }

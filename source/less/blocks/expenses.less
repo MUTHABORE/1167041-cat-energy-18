@@ -1,12 +1,6 @@
 .expenses {
-  width: 320px;
-  margin: 0 auto;
+  width: 280px;
   margin-bottom: 34px;
-}
-
-.expenses__wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
 }
 
 .expenses__list {
@@ -16,7 +10,7 @@
   list-style: none;
 
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .expenses__item {
@@ -74,7 +68,6 @@
   font-weight: 400;
   line-height: 20px;
   color: @txt-color-main;
-  letter-spacing: -0.1px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -83,6 +76,7 @@
   .expenses {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 31px;
   }
 
   .expenses__wrapper {
@@ -91,7 +85,7 @@
     align-items: center;
 
     padding: 0;
-    margin: 0 30px 0 30px;
+    margin: 0;
   }
 
   .expenses__list {
@@ -108,14 +102,13 @@
     line-height: 40px;
     font-weight: 400;
     color: @txt-color-main;
-    letter-spacing: -0.1px;
   }
 
   .expenses__title {
     min-width: 110px;
     padding: 0 2px;
 
-    top: -13px;
+    top: -16px;
 
     font-size: 14px;
     line-height: 14px;
@@ -132,21 +125,19 @@
     width: 180px;
 
     margin: 0;
-    margin-top: 7px;
-    margin-right: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
 
     text-align: end;
     font-size: 20px;
     line-height: 29px;
-    letter-spacing: -0.1px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .expenses__wrapper {
     flex-wrap: wrap;
-    width: 60%;
-    margin-left: 110px;
+    margin: 0;
   }
 
   .expenses__list {
@@ -159,11 +150,11 @@
 
   .expenses__total {
     width: auto;
-    margin-top: 28px;
+    margin-top: 25px;
     margin-right: 10px;
   }
 
   .expenses__total-price {
-    margin-left: 60px;
+    margin-left: 59px;
   }
 }

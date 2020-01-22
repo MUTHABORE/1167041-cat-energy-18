@@ -10,7 +10,6 @@
   line-height: 18px;
   color: @txt-color-main;
   text-transform: uppercase;
-  letter-spacing: -0.1px;
 }
 
 .form__fieldset {
@@ -28,15 +27,23 @@
   padding-right: 5px;
   width: 280px;
 
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 38px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: -0.2px;
 
   background-color: @bg-color-spec;
   border: none;
+
+  &:hover {
+    background-color: @bg-color-btn-hvr-actv;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .form__obligatory-fields {
@@ -57,7 +64,6 @@
     margin: 55px 70px 66px 70px;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: -0.08px;
   }
 
   .form__fieldset {
@@ -78,7 +84,6 @@
     width: 283px;
     font-size: 20px;
     line-height: 50px;
-    letter-spacing: 0;
   }
 
   .form__obligatory-fields {
@@ -94,20 +99,35 @@
     flex-wrap: wrap;
   }
 
-  .form__title {
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 110px;
+  .form__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1300px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 69px;
   }
 
-  .form__fieldset {
-    margin-left: 110px;
-    margin-bottom: 49px;
+  .form__title {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 66px;
+    box-sizing: border-box;
   }
 
   .form__submit-wrapper {
-    margin-left: 40px;
-    margin-bottom: 81px;
+    margin-left: calc(50% - 609px);
+    margin-bottom: 82px;
+    padding: 0;
+  }
+  
+  .form__fieldset {
+    margin-left: 0px;
+    margin-bottom: 0;
   }
 
   .form__submit {

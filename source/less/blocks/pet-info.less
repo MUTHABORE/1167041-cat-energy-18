@@ -35,6 +35,7 @@
 
 .pet-info__input {
   width: 100%;
+  height: 45px;
 
   padding-left: 14px;
   padding-top: 1px;
@@ -48,10 +49,27 @@
   color: @txt-color-spec;
   text-transform: uppercase;
 
+  box-sizing: border-box;
   border: 1px solid @border-color-spec-half;
 
-  &::placeholder {
-    color: @txt-color-spec;
+  &::-webkit-input-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #444444;
+    opacity: 1;
   }
 
   &:hover {
@@ -63,13 +81,6 @@
     padding-left: 13px;
     line-height: 38px;
     border: 2px solid @txt-color-spec;
-    outline: none;
-  }
-
-  &:error {
-    padding-left: 13px;
-    line-height: 38px;
-    border: 2px solid #ff8282;
     outline: none;
   }
 }
@@ -101,6 +112,7 @@
     padding-left: 18px;
     font-size: 20px;
     line-height: 47px;
+    height: 52px;
 
     &:focus {
       padding-left: 17px;

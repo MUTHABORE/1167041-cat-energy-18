@@ -6,7 +6,7 @@
     background-image: url("../img/icon-mail-hover.svg");
   }
 
-    &--telephone:hover::after {
+  &--telephone:hover::after {
     background-image: url("../img/icon-phone-hover.svg");
   }
 
@@ -41,6 +41,7 @@
 
 .contact__label {
   display: flex;
+  height: 52px;
 }
 
 .contact__title {
@@ -76,8 +77,24 @@
 
   border: 1px solid @border-color-spec-half;
 
-  &::placeholder {
-    color: @txt-color-spec;
+  &::-webkit-input-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: #444444;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #444444;
+    opacity: 1;
   }
 
   &:hover {
@@ -89,13 +106,6 @@
     padding-left: 13px;
     line-height: 38px;
     border: 2px solid @txt-color-spec;
-    outline: none;
-  }
-
-  &:error {
-    padding-left: 13px;
-    line-height: 38px;
-    border: 2px solid #ff8282;
     outline: none;
   }
 
